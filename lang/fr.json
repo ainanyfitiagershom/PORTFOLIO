@@ -109,7 +109,7 @@
     "mazars": {
       "role": "Stagiaire Développeuse Laravel",
       "company": "Forvis Mazars",
-      "desc": "Développement complet d'une application interne de gestion des missions et de facturation pour un cabinet d'audit international.",
+      "desc": "Développement complet d'une application interne de gestion des missions et de facturation pour un cabinet d'audit.",
       "tasks": [
         "Gestion complète du cycle de vie des missions",
         "Automatisation du processus de facturation",
