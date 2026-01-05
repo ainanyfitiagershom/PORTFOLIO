@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitia Gershom - Développeuse Full Stack</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#accueil" class="navbar-brand">
+                <i class="fas fa-code"></i> FG
+            </a>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#competences" class="nav-link">Compétences</a></li>
+                <li><a href="#experience" class="nav-link">Expérience</a></li>
+                <li><a href="#projets" class="nav-link">Projets</a></li>
+                <li><a href="#formation" class="nav-link">Formation</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <div class="hero-content">
+                <!-- <span class="hero-badge">Disponible pour de nouvelles opportunités</span> -->
+                <h1>Bonjour, je suis <em>Fitia Gershom</em></h1>
+                <p class="hero-subtitle">Développeuse Full Stack</p>
+                <p class="hero-description">Passionnée par le développement web, je crée des applications performantes et scalables. Du concept au déploiement, je développe des applications web complètes qui répondent aux besoins métiers et aux attentes utilisateurs.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Me contacter
+                    </a>
+                    <a href="assets/docs/CV_Fitia_GERSHOM.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i> Télécharger CV
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-wrapper">
+                    <div class="profile-decoration"></div>
+                    <img src="assets/images/profile.jpg" alt="Fitia Gershom" class="profile-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="profile-placeholder" style="display: none;">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="apropos">
+        <div class="container">
+            <div class="section-header">
+                <h2>À propos de moi</h2>
+                <div class="decorative-line"></div>
+                <p class="subtitle">Découvrez mon parcours et mes ambitions</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3><i class="fas fa-sparkles"></i> Mon Parcours</h3>
+                    <p>Actuellement en Master 2 MBDS à l'Université Côte d'Azur, je combine formation académique solide et expérience professionnelle concrète. Mon parcours m'a permis de travailler sur des projets variés, du développement d'applications internes à la création de plateformes SaaS complexes.</p>
+                    <p>Je suis particulièrement intéressée par les architectures scalables, l'optimisation des performances et l'amélioration continue de l'expérience utilisateur.</p>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Antananarivo</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Master 2 MBDS (en cours)</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Full Stack Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-language"></i>
+                            <span>FR, EN, Malgache</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="qualities-card">
+                    <h3><i class="fas fa-heart"></i> Soft Skills</h3>
+                    <div class="quality-tags">
+                        <span class="quality-tag"><i class="fas fa-users"></i> Travail en équipe</span>
+                        <span class="quality-tag"><i class="fas fa-hand-holding-heart"></i> Bienveillante</span>
+                        <span class="quality-tag"><i class="fas fa-comments"></i> Communication</span>
+                        <span class="quality-tag"><i class="fas fa-sync-alt"></i> Adaptabilité</span>
+                        <span class="quality-tag"><i class="fas fa-lightbulb"></i> Créativité</span>
+                        <span class="quality-tag"><i class="fas fa-tasks"></i> Organisation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="competences">
+        <div class="container">
+            <div class="section-header">
+                <h2>Compétences techniques</h2>
+                <div class="decorative-line"></div>
+                <p class="subtitle">Technologies et outils que je maîtrise</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>
+                        <span class="skill-icon"><i class="fas fa-code"></i></span>
+                        Langages
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">Node.js</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>
+                        <span class="skill-icon"><i class="fas fa-layer-group"></i></span>
+                        Frameworks
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Angular</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">CodeIgniter</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>
+                        <span class="skill-icon"><i class="fas fa-database"></i></span>
+                        Bases de données
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Oracle</span>
+                        <span class="skill-tag">SQL Server</span>
+                        <span class="skill-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>
+                        <span class="skill-icon"><i class="fas fa-tools"></i></span>
+                        Outils & DevOps
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Netlify</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Railway</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>
+                        <span class="skill-icon"><i class="fas fa-sitemap"></i></span>
+                        Méthodologies
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Agile / Scrum</span>
+                        <span class="skill-tag">TDD</span>
+                        <span class="skill-tag">DDD</span>
+                        <span class="skill-tag">Merise</span>
+                        <span class="skill-tag">UML</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>
+                        <span class="skill-icon"><i class="fas fa-tasks"></i></span>
+                        Compétences fonctionnelles
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Analyse des besoins</span>
+                        <span class="skill-tag">Modélisation</span>
+                        <span class="skill-tag">Tests & QA</span>
+                        <span class="skill-tag">Débogage</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+                    <div class="stat-number">1+</div>
+                    <div class="stat-label">Année d'expérience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Projets réalisés</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
+                    <div class="stat-number">7+</div>
+                    <div class="stat-label">Frameworks maîtrisés</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon"><i class="fas fa-database"></i></div>
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Bases de données</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2>Expérience professionnelle</h2>
+                <div class="decorative-line"></div>
+                <p class="subtitle">Mon parcours professionnel</p>
+            </div>
+
+            <!-- Experience Cards Grid -->
+            <div class="exp-cards-grid">
+                <!-- Tsarajoro - Linkuma -->
+                <div class="exp-card">
+                    <h3>Développeuse Full-Stack</h3>
+                    <p class="exp-company">Tsarajoro - Plateforme Linkuma</p>
+                    <span class="exp-date"><i class="far fa-calendar-alt"></i> Nov 2024 - Aujourd'hui</span>
+                    <p class="exp-desc"><strong>SaaS de netlinking</strong> pour agences SEO. Gestion automatisée de campagnes, paiements par crédits et analytics.</p>
+                    <ul class="exp-list">
+                        <li><strong>Interface client</strong> - Paiement crédits par virement, suivi transactions</li>
+                        <li><strong>Interface admin</strong> - Traçabilité (IP, logs), alertes intelligentes</li>
+                        <li><strong>Gestion PBN</strong> - Intégration WordPress, publication auto</li>
+                        <li><strong>Analytics SEO</strong> - Ranxplorer, suivi mots-clés et trafic</li>
+                        <li><strong>IA & Auto</strong> - OpenAI (titres), TextBulker (rédaction)</li>
+                        <li><strong>Intégrations</strong> - PennyLane, Airtable, Haloscan</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Laravel 10</span>
+                        <span class="tech-tag">Vue 3</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Tsarajoro - CRM -->
+                <div class="exp-card">
+                    <h3>Développeuse Full-Stack</h3>
+                    <p class="exp-company">Tsarajoro - CRM Production</p>
+                    <span class="exp-date"><i class="far fa-calendar-alt"></i> Nov 2024 - Aujourd'hui</span>
+                    <p class="exp-desc"><strong>CRM interne</strong> pour gérer la production de sites WordPress (Kubio). Workflow multi-équipes et validation.</p>
+                    <ul class="exp-list">
+                        <li><strong>Workflow production</strong> - Kubios → Todos → Preprod</li>
+                        <li><strong>Multi-équipes</strong> - GI (intégrateurs) + GV (validateurs)</li>
+                        <li><strong>Validation</strong> - Checklist SEO, articles, pages</li>
+                        <li><strong>Monitoring</strong> - Statuts HTTP, hébergements, domaines</li>
+                        <li><strong>Stats & CA</strong> - Reporting par chef de projet</li>
+                        <li><strong>Gestion rôles</strong> - Spatie permissions</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Laravel 10</span>
+                        <span class="tech-tag">Vue 3</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Tsarajoro - Supervision -->
+                <div class="exp-card">
+                    <h3>Développeuse Full-Stack</h3>
+                    <p class="exp-company">Tsarajoro - Supervision</p>
+                    <span class="exp-date"><i class="far fa-calendar-alt"></i> Nov 2024 - Aujourd'hui</span>
+                    <p class="exp-desc">Monitoring des domaines clients, détection DNS, suivi SSL et sécurité réseau en temps réel.</p>
+                    <ul class="exp-list">
+                        <li><strong>Monitoring DNS</strong> et détection d'anomalies</li>
+                        <li><strong>Suivi SSL</strong> et alertes expiration</li>
+                        <li><strong>Sécurité réseau</strong> en temps réel</li>
+                        <li><strong>Alertes automatiques</strong> par email</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+
+                <!-- Freelance RH -->
+                <div class="exp-card">
+                    <h3>Développeuse Full-Stack Freelance</h3>
+                    <p class="exp-company">WoodCraft - Gestion RH</p>
+                    <span class="exp-date"><i class="far fa-calendar-alt"></i> Octobre 2025</span>
+                    <p class="exp-desc"><strong>Application RH complète</strong> avec 5 rôles (Admin, RH, Chef, Employé, Actionnaire), modules congés, stock et paie.</p>
+                    <ul class="exp-list">
+                        <li><strong>Auth JWT</strong> - 5 rôles, dashboards personnalisés</li>
+                        <li><strong>Employés</strong> - CRUD, contrats, historique salaires</li>
+                        <li><strong>Congés</strong> - Workflow Chef→RH, solde auto, calcul jours</li>
+                        <li><strong>Stock</strong> - Achats/ventes, import Excel, dashboards</li>
+                        <li><strong>Audit</strong> - Traçabilité complète, logs système</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <!-- Forvis Mazars -->
+                <div class="exp-card">
+                    <h3>Stagiaire Développeuse Laravel</h3>
+                    <p class="exp-company">Forvis Mazars</p>
+                    <span class="exp-date"><i class="far fa-calendar-alt"></i> Août - Novembre 2024</span>
+                    <p class="exp-desc">Développement complet d'une application interne de gestion des missions et de facturation pour un cabinet d'audit international.</p>
+                    <ul class="exp-list">
+                        <li><strong>Gestion complète</strong> du cycle de vie des missions</li>
+                        <li><strong>Automatisation</strong> du processus de facturation</li>
+                        <li><strong>Calcul automatisé</strong> du budget prévisionnel</li>
+                        <li><strong>Suivi et gestion</strong> de l'encaissement</li>
+                    </ul>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Laravel</span>
+                        <span class="tech-tag">Oracle</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projets">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projets universitaires</h2>
+                <div class="decorative-line"></div>
+                <p class="subtitle">Quelques réalisations académiques</p>
+            </div>
+            <div class="uni-projects-grid">
+                <div class="uni-project-card">
+                    <div class="uni-project-icon">
+                        <i class="fas fa-couch"></i>
+                    </div>
+                    <h3>Confection de meubles</h3>
+                    <p>Gestion des commandes, suivi de fabrication, calcul des coûts matières et main d'œuvre.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">JSP</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="uni-project-card">
+                    <div class="uni-project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Bibliothèque</h3>
+                    <p>Gestion des emprunts, retours, pénalités de retard et catalogue de livres.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">ASP.NET</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">SQL Server</span>
+                    </div>
+                </div>
+                <div class="uni-project-card">
+                    <div class="uni-project-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Gestion de garage</h3>
+                    <p>Diagnostic automobile, suivi des réparations et gestion des paiements clients.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+                <div class="uni-project-card">
+                    <div class="uni-project-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Ventes de voitures</h3>
+                    <p>Gestion des ventes, suivi clients et historique des transactions.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="formation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Formation</h2>
+                <div class="decorative-line"></div>
+                <p class="subtitle">Mon parcours académique</p>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Master 2 MBDS</h3>
+                    <p class="school">Université Côte d'Azur</p>
+                    <span class="year"><i class="far fa-calendar-alt"></i> 2025 - Présent</span>
+                </div>
+                <div class="education-card">
+                    <h3>Master 1 en Informatique</h3>
+                    <p class="school">IT University</p>
+                    <span class="year"><i class="far fa-calendar-alt"></i> 2024 - 2025</span>
+                </div>
+                <div class="education-card">
+                    <h3>Licence en développement d'applications</h3>
+                    <p class="school">IT University</p>
+                    <span class="year"><i class="far fa-calendar-alt"></i> 2021 - 2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-simple" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <div class="decorative-line"></div>
+            </div>
+            <div class="contact-row">
+                <a href="mailto:gershomfitia@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>gershomfitia@gmail.com</span>
+                </a>
+                <a href="tel:+261349669554" class="contact-link">
+                    <i class="fas fa-phone"></i>
+                    <span>+261 34 96 695 54</span>
+                </a>
+                <span class="contact-link">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Antananarivo, Madagascar</span>
+                </span>
+                <a href="https://linkedin.com/in/fitia-gershom" target="_blank" class="contact-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/fitia-gershom" target="_blank" class="contact-link">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="current-year"></span> Fitia Gershom. Tous droits réservés. Fait avec <i class="far fa-heart"></i></p>
+    </footer>
+
+    <script>
+        // Current year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                nav.style.boxShadow = '0 4px 30px rgba(147, 51, 234, 0.1)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.skill-card, .project-card, .timeline-item, .education-card, .stat-card, .contact-item, .exp-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+            observer.observe(el);
+        });
+
+        // Add stagger effect
+        document.querySelectorAll('.skills-grid .skill-card').forEach((card, index) => {
+            card.style.transitionDelay = `${index * 0.1}s`;
+        });
+
+        document.querySelectorAll('.exp-cards-grid .exp-card').forEach((card, index) => {
+            card.style.transitionDelay = `${index * 0.1}s`;
+        });
+
+        document.querySelectorAll('.stats .stat-card').forEach((card, index) => {
+            card.style.transitionDelay = `${index * 0.1}s`;
+        });
+
+        document.querySelectorAll('.contact-grid .contact-item').forEach((item, index) => {
+            item.style.transitionDelay = `${index * 0.1}s`;
+        });
+
+        // Counter animation for stats
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const statNumbers = entry.target.querySelectorAll('.stat-number');
+                    statNumbers.forEach(stat => {
+                        const finalValue = stat.textContent;
+                        const numericPart = parseInt(finalValue);
+                        const suffix = finalValue.replace(/[0-9]/g, '');
+
+                        if (!isNaN(numericPart)) {
+                            let current = 0;
+                            const increment = numericPart / 30;
+                            const timer = setInterval(() => {
+                                current += increment;
+                                if (current >= numericPart) {
+                                    stat.textContent = finalValue;
+                                    clearInterval(timer);
+                                } else {
+                                    stat.textContent = Math.floor(current) + suffix;
+                                }
+                            }, 30);
+                        }
+                    });
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const statsSection = document.querySelector('.stats');
+        if (statsSection) {
+            counterObserver.observe(statsSection);
+        }
+    </script>
+</body>
+</html>
