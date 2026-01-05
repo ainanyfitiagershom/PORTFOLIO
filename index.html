@@ -16,14 +16,17 @@
                 <i class="fas fa-code"></i> FG
             </a>
             <ul class="nav-links">
-                <li><a href="#accueil" class="nav-link">Accueil</a></li>
-                <li><a href="#apropos" class="nav-link">À propos</a></li>
-                <li><a href="#competences" class="nav-link">Compétences</a></li>
-                <li><a href="#experience" class="nav-link">Expérience</a></li>
-                <li><a href="#projets" class="nav-link">Projets</a></li>
-                <li><a href="#formation" class="nav-link">Formation</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#accueil" class="nav-link" data-i18n="nav.home">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link" data-i18n="nav.about">À propos</a></li>
+                <li><a href="#competences" class="nav-link" data-i18n="nav.skills">Compétences</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Expérience</a></li>
+                <li><a href="#projets" class="nav-link" data-i18n="nav.projects">Projets</a></li>
+                <li><a href="#formation" class="nav-link" data-i18n="nav.education">Formation</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
             </ul>
+            <button class="lang-btn" onclick="toggleLang()" title="Change language">
+                <span id="current-lang">🇫🇷</span>
+            </button>
             <div class="hamburger" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
@@ -37,15 +40,15 @@
         <div class="container">
             <div class="hero-content">
                 <!-- <span class="hero-badge">Disponible pour de nouvelles opportunités</span> -->
-                <h1>Bonjour, je suis <em>Fitia Gershom</em></h1>
-                <p class="hero-subtitle">Développeuse Full Stack</p>
-                <p class="hero-description">Passionnée par le développement web, je crée des applications performantes et scalables. Du concept au déploiement, je développe des applications web complètes qui répondent aux besoins métiers et aux attentes utilisateurs.</p>
+                <h1><span data-i18n="hero.greeting">Bonjour, je suis</span> <em>Fitia Gershom</em></h1>
+                <p class="hero-subtitle" data-i18n="hero.title">Développeuse Full Stack</p>
+                <p class="hero-description" data-i18n="hero.description">Passionnée par le développement web, je crée des applications performantes et scalables. Du concept au déploiement, je développe des applications web complètes qui répondent aux besoins métiers et aux attentes utilisateurs.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">
-                        <i class="fas fa-envelope"></i> Me contacter
+                        <i class="fas fa-envelope"></i> <span data-i18n="hero.contact_btn">Me contacter</span>
                     </a>
                     <a href="assets/docs/CV_Fitia_GERSHOM.pdf" class="btn btn-outline" download>
-                        <i class="fas fa-download"></i> Télécharger CV
+                        <i class="fas fa-download"></i> <span data-i18n="hero.cv_btn">Télécharger CV</span>
                     </a>
                 </div>
             </div>
@@ -65,43 +68,43 @@
     <section class="about" id="apropos">
         <div class="container">
             <div class="section-header">
-                <h2>À propos de moi</h2>
+                <h2 data-i18n="about.title">À propos de moi</h2>
                 <div class="decorative-line"></div>
-                <p class="subtitle">Découvrez mon parcours et mes ambitions</p>
+                <p class="subtitle" data-i18n="about.subtitle">Découvrez mon parcours et mes ambitions</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <h3><i class="fas fa-sparkles"></i> Mon Parcours</h3>
-                    <p>Actuellement en Master 2 MBDS à l'Université Côte d'Azur, je combine formation académique solide et expérience professionnelle concrète. Mon parcours m'a permis de travailler sur des projets variés, du développement d'applications internes à la création de plateformes SaaS complexes.</p>
-                    <p>Je suis particulièrement intéressée par les architectures scalables, l'optimisation des performances et l'amélioration continue de l'expérience utilisateur.</p>
+                    <h3><i class="fas fa-sparkles"></i> <span data-i18n="about.journey_title">Mon Parcours</span></h3>
+                    <p data-i18n="about.journey_p1">Actuellement en Master 2 MBDS à l'Université Côte d'Azur, je combine formation académique solide et expérience professionnelle concrète. Mon parcours m'a permis de travailler sur des projets variés, du développement d'applications internes à la création de plateformes SaaS complexes.</p>
+                    <p data-i18n="about.journey_p2">Je suis particulièrement intéressée par les architectures scalables, l'optimisation des performances et l'amélioration continue de l'expérience utilisateur.</p>
                     <div class="info-grid">
                         <div class="info-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Antananarivo</span>
+                            <span data-i18n="about.location">Antananarivo</span>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-graduation-cap"></i>
-                            <span>Master 2 MBDS (en cours)</span>
+                            <span data-i18n="about.degree">Master 2 MBDS (en cours)</span>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-briefcase"></i>
-                            <span>Full Stack Developer</span>
+                            <span data-i18n="about.role">Full Stack Developer</span>
                         </div>
                         <div class="info-item">
                             <i class="fas fa-language"></i>
-                            <span>FR, EN, Malgache</span>
+                            <span data-i18n="about.languages">FR, EN, Malgache</span>
                         </div>
                     </div>
                 </div>
                 <div class="qualities-card">
-                    <h3><i class="fas fa-heart"></i> Soft Skills</h3>
+                    <h3><i class="fas fa-heart"></i> <span data-i18n="about.soft_skills">Soft Skills</span></h3>
                     <div class="quality-tags">
-                        <span class="quality-tag"><i class="fas fa-users"></i> Travail en équipe</span>
-                        <span class="quality-tag"><i class="fas fa-hand-holding-heart"></i> Bienveillante</span>
-                        <span class="quality-tag"><i class="fas fa-comments"></i> Communication</span>
-                        <span class="quality-tag"><i class="fas fa-sync-alt"></i> Adaptabilité</span>
-                        <span class="quality-tag"><i class="fas fa-lightbulb"></i> Créativité</span>
-                        <span class="quality-tag"><i class="fas fa-tasks"></i> Organisation</span>
+                        <span class="quality-tag"><i class="fas fa-users"></i> <span data-i18n="about.teamwork">Travail en équipe</span></span>
+                        <span class="quality-tag"><i class="fas fa-hand-holding-heart"></i> <span data-i18n="about.caring">Bienveillante</span></span>
+                        <span class="quality-tag"><i class="fas fa-comments"></i> <span data-i18n="about.communication">Communication</span></span>
+                        <span class="quality-tag"><i class="fas fa-sync-alt"></i> <span data-i18n="about.adaptability">Adaptabilité</span></span>
+                        <span class="quality-tag"><i class="fas fa-lightbulb"></i> <span data-i18n="about.creativity">Créativité</span></span>
+                        <span class="quality-tag"><i class="fas fa-tasks"></i> <span data-i18n="about.organization">Organisation</span></span>
                     </div>
                 </div>
             </div>
@@ -112,15 +115,15 @@
     <section class="skills" id="competences">
         <div class="container">
             <div class="section-header">
-                <h2>Compétences techniques</h2>
+                <h2 data-i18n="skills.title">Compétences techniques</h2>
                 <div class="decorative-line"></div>
-                <p class="subtitle">Technologies et outils que je maîtrise</p>
+                <p class="subtitle" data-i18n="skills.subtitle">Technologies et outils que je maîtrise</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-card">
                     <h3>
                         <span class="skill-icon"><i class="fas fa-code"></i></span>
-                        Langages
+                        <span data-i18n="skills.languages">Langages</span>
                     </h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Java</span>
@@ -134,7 +137,7 @@
                 <div class="skill-card">
                     <h3>
                         <span class="skill-icon"><i class="fas fa-layer-group"></i></span>
-                        Frameworks
+                        <span data-i18n="skills.frameworks">Frameworks</span>
                     </h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Laravel</span>
@@ -149,7 +152,7 @@
                 <div class="skill-card">
                     <h3>
                         <span class="skill-icon"><i class="fas fa-database"></i></span>
-                        Bases de données
+                        <span data-i18n="skills.databases">Bases de données</span>
                     </h3>
                     <div class="skill-tags">
                         <span class="skill-tag">PostgreSQL</span>
@@ -162,7 +165,7 @@
                 <div class="skill-card">
                     <h3>
                         <span class="skill-icon"><i class="fas fa-tools"></i></span>
-                        Outils & DevOps
+                        <span data-i18n="skills.tools">Outils & DevOps</span>
                     </h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Docker</span>
@@ -177,7 +180,7 @@
                 <div class="skill-card">
                     <h3>
                         <span class="skill-icon"><i class="fas fa-sitemap"></i></span>
-                        Méthodologies
+                        <span data-i18n="skills.methodologies">Méthodologies</span>
                     </h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Agile / Scrum</span>
@@ -190,13 +193,13 @@
                 <div class="skill-card">
                     <h3>
                         <span class="skill-icon"><i class="fas fa-tasks"></i></span>
-                        Compétences fonctionnelles
+                        <span data-i18n="skills.functional">Compétences fonctionnelles</span>
                     </h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Analyse des besoins</span>
-                        <span class="skill-tag">Modélisation</span>
-                        <span class="skill-tag">Tests & QA</span>
-                        <span class="skill-tag">Débogage</span>
+                        <span class="skill-tag" data-i18n="skills.needs_analysis">Analyse des besoins</span>
+                        <span class="skill-tag" data-i18n="skills.modeling">Modélisation</span>
+                        <span class="skill-tag" data-i18n="skills.testing">Tests & QA</span>
+                        <span class="skill-tag" data-i18n="skills.debugging">Débogage</span>
                     </div>
                 </div>
             </div>
@@ -206,22 +209,22 @@
                 <div class="stat-card">
                     <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
                     <div class="stat-number">1+</div>
-                    <div class="stat-label">Année d'expérience</div>
+                    <div class="stat-label" data-i18n="skills.stats.experience">Année d'expérience</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
                     <div class="stat-number">10+</div>
-                    <div class="stat-label">Projets réalisés</div>
+                    <div class="stat-label" data-i18n="skills.stats.projects">Projets réalisés</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon"><i class="fas fa-code-branch"></i></div>
                     <div class="stat-number">7+</div>
-                    <div class="stat-label">Frameworks maîtrisés</div>
+                    <div class="stat-label" data-i18n="skills.stats.frameworks">Frameworks maîtrisés</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-icon"><i class="fas fa-database"></i></div>
                     <div class="stat-number">5</div>
-                    <div class="stat-label">Bases de données</div>
+                    <div class="stat-label" data-i18n="skills.stats.databases">Bases de données</div>
                 </div>
             </div>
         </div>
@@ -231,20 +234,20 @@
     <section class="experience" id="experience">
         <div class="container">
             <div class="section-header">
-                <h2>Expérience professionnelle</h2>
+                <h2 data-i18n="experience.title">Expérience professionnelle</h2>
                 <div class="decorative-line"></div>
-                <p class="subtitle">Mon parcours professionnel</p>
+                <p class="subtitle" data-i18n="experience.subtitle">Mon parcours professionnel</p>
             </div>
 
             <!-- Experience Cards Grid -->
             <div class="exp-cards-grid">
                 <!-- Tsarajoro - Linkuma -->
                 <div class="exp-card">
-                    <h3>Développeuse Full-Stack</h3>
-                    <p class="exp-company">Tsarajoro - Plateforme Linkuma</p>
-                    <span class="exp-date"><i class="far fa-calendar-alt"></i> Nov 2024 - Aujourd'hui</span>
-                    <p class="exp-desc"><strong>SaaS de netlinking</strong> pour agences SEO. Gestion automatisée de campagnes, paiements par crédits et analytics.</p>
-                    <ul class="exp-list">
+                    <h3 data-i18n="experience.linkuma.role">Développeuse Full-Stack</h3>
+                    <p class="exp-company" data-i18n="experience.linkuma.company">Tsarajoro - Plateforme Linkuma</p>
+                    <span class="exp-date"><i class="far fa-calendar-alt"></i> Nov 2024 - <span data-i18n="experience.present">Aujourd'hui</span></span>
+                    <p class="exp-desc" data-i18n="experience.linkuma.desc"><strong>SaaS de netlinking</strong> pour agences SEO. Gestion automatisée de campagnes, paiements par crédits et analytics.</p>
+                    <ul class="exp-list" data-i18n-list="experience.linkuma.tasks">
                         <li><strong>Interface client</strong> - Paiement crédits par virement, suivi transactions</li>
                         <li><strong>Interface admin</strong> - Traçabilité (IP, logs), alertes intelligentes</li>
                         <li><strong>Gestion PBN</strong> - Intégration WordPress, publication auto</li>
@@ -261,11 +264,11 @@
 
                 <!-- Tsarajoro - CRM -->
                 <div class="exp-card">
-                    <h3>Développeuse Full-Stack</h3>
-                    <p class="exp-company">Tsarajoro - CRM Production</p>
-                    <span class="exp-date"><i class="far fa-calendar-alt"></i> Nov 2024 - Aujourd'hui</span>
-                    <p class="exp-desc"><strong>CRM interne</strong> pour gérer la production de sites WordPress (Kubio). Workflow multi-équipes et validation.</p>
-                    <ul class="exp-list">
+                    <h3 data-i18n="experience.crm.role">Développeuse Full-Stack</h3>
+                    <p class="exp-company" data-i18n="experience.crm.company">Tsarajoro - CRM Production</p>
+                    <span class="exp-date"><i class="far fa-calendar-alt"></i> Nov 2024 - <span data-i18n="experience.present">Aujourd'hui</span></span>
+                    <p class="exp-desc" data-i18n="experience.crm.desc"><strong>CRM interne</strong> pour gérer la production de sites WordPress (Kubio). Workflow multi-équipes et validation.</p>
+                    <ul class="exp-list" data-i18n-list="experience.crm.tasks">
                         <li><strong>Workflow production</strong> - Kubios → Todos → Preprod</li>
                         <li><strong>Multi-équipes</strong> - GI (intégrateurs) + GV (validateurs)</li>
                         <li><strong>Validation</strong> - Checklist SEO, articles, pages</li>
@@ -282,11 +285,11 @@
 
                 <!-- Tsarajoro - Supervision -->
                 <div class="exp-card">
-                    <h3>Développeuse Full-Stack</h3>
-                    <p class="exp-company">Tsarajoro - Supervision</p>
-                    <span class="exp-date"><i class="far fa-calendar-alt"></i> Nov 2024 - Aujourd'hui</span>
-                    <p class="exp-desc">Monitoring des domaines clients, détection DNS, suivi SSL et sécurité réseau en temps réel.</p>
-                    <ul class="exp-list">
+                    <h3 data-i18n="experience.supervision.role">Développeuse Full-Stack</h3>
+                    <p class="exp-company" data-i18n="experience.supervision.company">Tsarajoro - Supervision</p>
+                    <span class="exp-date"><i class="far fa-calendar-alt"></i> Nov 2024 - <span data-i18n="experience.present">Aujourd'hui</span></span>
+                    <p class="exp-desc" data-i18n="experience.supervision.desc">Monitoring des domaines clients, détection DNS, suivi SSL et sécurité réseau en temps réel.</p>
+                    <ul class="exp-list" data-i18n-list="experience.supervision.tasks">
                         <li><strong>Monitoring DNS</strong> et détection d'anomalies</li>
                         <li><strong>Suivi SSL</strong> et alertes expiration</li>
                         <li><strong>Sécurité réseau</strong> en temps réel</li>
@@ -300,11 +303,11 @@
 
                 <!-- Freelance RH -->
                 <div class="exp-card">
-                    <h3>Développeuse Full-Stack Freelance</h3>
-                    <p class="exp-company">WoodCraft - Gestion RH</p>
+                    <h3 data-i18n="experience.rh.role">Développeuse Full-Stack Freelance</h3>
+                    <p class="exp-company" data-i18n="experience.rh.company">WoodCraft - Gestion RH</p>
                     <span class="exp-date"><i class="far fa-calendar-alt"></i> Octobre 2025</span>
-                    <p class="exp-desc"><strong>Application RH complète</strong> avec 5 rôles (Admin, RH, Chef, Employé, Actionnaire), modules congés, stock et paie.</p>
-                    <ul class="exp-list">
+                    <p class="exp-desc" data-i18n="experience.rh.desc"><strong>Application RH complète</strong> avec 5 rôles (Admin, RH, Chef, Employé, Actionnaire), modules congés, stock et paie.</p>
+                    <ul class="exp-list" data-i18n-list="experience.rh.tasks">
                         <li><strong>Auth JWT</strong> - 5 rôles, dashboards personnalisés</li>
                         <li><strong>Employés</strong> - CRUD, contrats, historique salaires</li>
                         <li><strong>Congés</strong> - Workflow Chef→RH, solde auto, calcul jours</li>
@@ -320,11 +323,11 @@
 
                 <!-- Forvis Mazars -->
                 <div class="exp-card">
-                    <h3>Stagiaire Développeuse Laravel</h3>
-                    <p class="exp-company">Forvis Mazars</p>
+                    <h3 data-i18n="experience.mazars.role">Stagiaire Développeuse Laravel</h3>
+                    <p class="exp-company" data-i18n="experience.mazars.company">Forvis Mazars</p>
                     <span class="exp-date"><i class="far fa-calendar-alt"></i> Août - Novembre 2024</span>
-                    <p class="exp-desc">Développement complet d'une application interne de gestion des missions et de facturation pour un cabinet d'audit international.</p>
-                    <ul class="exp-list">
+                    <p class="exp-desc" data-i18n="experience.mazars.desc">Développement complet d'une application interne de gestion des missions et de facturation pour un cabinet d'audit international.</p>
+                    <ul class="exp-list" data-i18n-list="experience.mazars.tasks">
                         <li><strong>Gestion complète</strong> du cycle de vie des missions</li>
                         <li><strong>Automatisation</strong> du processus de facturation</li>
                         <li><strong>Calcul automatisé</strong> du budget prévisionnel</li>
@@ -343,17 +346,17 @@
     <section class="projects" id="projets">
         <div class="container">
             <div class="section-header">
-                <h2>Projets universitaires</h2>
+                <h2 data-i18n="projects.title">Projets universitaires</h2>
                 <div class="decorative-line"></div>
-                <p class="subtitle">Quelques réalisations académiques</p>
+                <p class="subtitle" data-i18n="projects.subtitle">Quelques réalisations académiques</p>
             </div>
             <div class="uni-projects-grid">
                 <div class="uni-project-card">
                     <div class="uni-project-icon">
                         <i class="fas fa-couch"></i>
                     </div>
-                    <h3>Confection de meubles</h3>
-                    <p>Gestion des commandes, suivi de fabrication, calcul des coûts matières et main d'œuvre.</p>
+                    <h3 data-i18n="projects.furniture.name">Confection de meubles</h3>
+                    <p data-i18n="projects.furniture.desc">Gestion des commandes, suivi de fabrication, calcul des coûts matières et main d'œuvre.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">Java</span>
                         <span class="tech-tag">JSP</span>
@@ -364,8 +367,8 @@
                     <div class="uni-project-icon">
                         <i class="fas fa-book"></i>
                     </div>
-                    <h3>Bibliothèque</h3>
-                    <p>Gestion des emprunts, retours, pénalités de retard et catalogue de livres.</p>
+                    <h3 data-i18n="projects.library.name">Bibliothèque</h3>
+                    <p data-i18n="projects.library.desc">Gestion des emprunts, retours, pénalités de retard et catalogue de livres.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">ASP.NET</span>
                         <span class="tech-tag">C#</span>
@@ -376,8 +379,8 @@
                     <div class="uni-project-icon">
                         <i class="fas fa-car"></i>
                     </div>
-                    <h3>Gestion de garage</h3>
-                    <p>Diagnostic automobile, suivi des réparations et gestion des paiements clients.</p>
+                    <h3 data-i18n="projects.garage.name">Gestion de garage</h3>
+                    <p data-i18n="projects.garage.desc">Diagnostic automobile, suivi des réparations et gestion des paiements clients.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">Angular</span>
                         <span class="tech-tag">Express.js</span>
@@ -388,8 +391,8 @@
                     <div class="uni-project-icon">
                         <i class="fas fa-car-side"></i>
                     </div>
-                    <h3>Ventes de voitures</h3>
-                    <p>Gestion des ventes, suivi clients et historique des transactions.</p>
+                    <h3 data-i18n="projects.cars.name">Ventes de voitures</h3>
+                    <p data-i18n="projects.cars.desc">Gestion des ventes, suivi clients et historique des transactions.</p>
                     <div class="tech-tags">
                         <span class="tech-tag">Spring Boot</span>
                         <span class="tech-tag">React</span>
@@ -404,23 +407,23 @@
     <section class="education" id="formation">
         <div class="container">
             <div class="section-header">
-                <h2>Formation</h2>
+                <h2 data-i18n="education.title">Formation</h2>
                 <div class="decorative-line"></div>
-                <p class="subtitle">Mon parcours académique</p>
+                <p class="subtitle" data-i18n="education.subtitle">Mon parcours académique</p>
             </div>
             <div class="education-grid">
                 <div class="education-card">
-                    <h3>Master 2 MBDS</h3>
+                    <h3 data-i18n="education.mbds">Master 2 MBDS</h3>
                     <p class="school">Université Côte d'Azur</p>
-                    <span class="year"><i class="far fa-calendar-alt"></i> 2025 - Présent</span>
+                    <span class="year"><i class="far fa-calendar-alt"></i> 2025 - <span data-i18n="education.present">Présent</span></span>
                 </div>
                 <div class="education-card">
-                    <h3>Master 1 en Informatique</h3>
+                    <h3 data-i18n="education.master">Master 1 en Informatique</h3>
                     <p class="school">IT University</p>
                     <span class="year"><i class="far fa-calendar-alt"></i> 2024 - 2025</span>
                 </div>
                 <div class="education-card">
-                    <h3>Licence en développement d'applications</h3>
+                    <h3 data-i18n="education.license">Licence en développement d'applications</h3>
                     <p class="school">IT University</p>
                     <span class="year"><i class="far fa-calendar-alt"></i> 2021 - 2024</span>
                 </div>
@@ -432,7 +435,7 @@
     <section class="contact-simple" id="contact">
         <div class="container">
             <div class="section-header">
-                <h2>Contact</h2>
+                <h2 data-i18n="contact.title">Contact</h2>
                 <div class="decorative-line"></div>
             </div>
             <div class="contact-row">
@@ -452,22 +455,92 @@
                     <i class="fab fa-linkedin"></i>
                     <span>LinkedIn</span>
                 </a>
-                <a href="https://github.com/fitia-gershom" target="_blank" class="contact-link">
-                    <i class="fab fa-github"></i>
-                    <span>GitHub</span>
-                </a>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; <span id="current-year"></span> Fitia Gershom. Tous droits réservés. Fait avec <i class="far fa-heart"></i></p>
+        <p>&copy; <span id="current-year"></span> Fitia Gershom. <span data-i18n="footer.rights">Tous droits réservés. Fait avec</span> <i class="far fa-heart"></i></p>
     </footer>
 
     <script>
         // Current year
         document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Language switching - Translations embedded for CORS compatibility
+        const allTranslations = {
+            fr: {
+                nav: { home: "Accueil", about: "À propos", skills: "Compétences", experience: "Expérience", projects: "Projets", education: "Formation", contact: "Contact" },
+                hero: { greeting: "Bonjour, je suis", title: "Développeuse Full Stack", description: "Passionnée par le développement web, je crée des applications performantes et scalables. Du concept au déploiement, je développe des applications web complètes qui répondent aux besoins métiers et aux attentes utilisateurs.", contact_btn: "Me contacter", cv_btn: "Télécharger CV" },
+                about: { title: "À propos de moi", subtitle: "Découvrez mon parcours et mes ambitions", journey_title: "Mon Parcours", journey_p1: "Actuellement en Master 2 MBDS à l'Université Côte d'Azur, je combine formation académique solide et expérience professionnelle concrète. Mon parcours m'a permis de travailler sur des projets variés, du développement d'applications internes à la création de plateformes SaaS complexes.", journey_p2: "Je suis particulièrement intéressée par les architectures scalables, l'optimisation des performances et l'amélioration continue de l'expérience utilisateur.", location: "Antananarivo", degree: "Master 2 MBDS (en cours)", role: "Full Stack Developer", languages: "FR, EN, Malgache", soft_skills: "Soft Skills", teamwork: "Travail en équipe", caring: "Bienveillante", communication: "Communication", adaptability: "Adaptabilité", creativity: "Créativité", organization: "Organisation" },
+                skills: { title: "Compétences techniques", subtitle: "Technologies et outils que je maîtrise", languages: "Langages", frameworks: "Frameworks", databases: "Bases de données", tools: "Outils & DevOps", methodologies: "Méthodologies", functional: "Compétences fonctionnelles", needs_analysis: "Analyse des besoins", modeling: "Modélisation", testing: "Tests & QA", debugging: "Débogage", stats: { experience: "Année d'expérience", projects: "Projets réalisés", frameworks: "Frameworks maîtrisés", databases: "Bases de données" } },
+                experience: { title: "Expérience professionnelle", subtitle: "Mon parcours professionnel", present: "Aujourd'hui", linkuma: { role: "Développeuse Full-Stack", company: "Tsarajoro - Plateforme Linkuma", desc: "SaaS de netlinking pour agences SEO. Gestion automatisée de campagnes, paiements par crédits et analytics.", tasks: ["Interface client - Paiement crédits par virement, suivi transactions", "Interface admin - Traçabilité (IP, logs), alertes intelligentes", "Gestion PBN - Intégration WordPress, publication auto", "Analytics SEO - Ranxplorer, suivi mots-clés et trafic", "IA & Auto - OpenAI (titres), TextBulker (rédaction)", "Intégrations - PennyLane, Airtable, Haloscan"] }, crm: { role: "Développeuse Full-Stack", company: "Tsarajoro - CRM Production", desc: "CRM interne pour gérer la production de sites WordPress (Kubio). Workflow multi-équipes et validation.", tasks: ["Workflow production - Kubios → Todos → Preprod", "Multi-équipes - GI (intégrateurs) + GV (validateurs)", "Validation - Checklist SEO, articles, pages", "Monitoring - Statuts HTTP, hébergements, domaines", "Stats & CA - Reporting par chef de projet", "Gestion rôles - Spatie permissions"] }, supervision: { role: "Développeuse Full-Stack", company: "Tsarajoro - Supervision", desc: "Monitoring des domaines clients, détection DNS, suivi SSL et sécurité réseau en temps réel.", tasks: ["Monitoring DNS et détection d'anomalies", "Suivi SSL et alertes expiration", "Sécurité réseau en temps réel", "Alertes automatiques par email"] }, rh: { role: "Développeuse Full-Stack Freelance", company: "WoodCraft - Gestion RH", desc: "Application RH complète avec 5 rôles (Admin, RH, Chef, Employé, Actionnaire), modules congés, stock et paie.", tasks: ["Auth JWT - 5 rôles, dashboards personnalisés", "Employés - CRUD, contrats, historique salaires", "Congés - Workflow Chef→RH, solde auto, calcul jours", "Stock - Achats/ventes, import Excel, dashboards", "Audit - Traçabilité complète, logs système"] }, mazars: { role: "Stagiaire Développeuse Laravel", company: "Forvis Mazars", desc: "Développement complet d'une application interne de gestion des missions et de facturation pour un cabinet d'audit international.", tasks: ["Gestion complète du cycle de vie des missions", "Automatisation du processus de facturation", "Calcul automatisé du budget prévisionnel", "Suivi et gestion de l'encaissement"] } },
+                projects: { title: "Projets universitaires", subtitle: "Quelques réalisations académiques", furniture: { name: "Confection de meubles", desc: "Gestion des commandes, suivi de fabrication, calcul des coûts matières et main d'œuvre." }, library: { name: "Bibliothèque", desc: "Gestion des emprunts, retours, pénalités de retard et catalogue de livres." }, garage: { name: "Gestion de garage", desc: "Diagnostic automobile, suivi des réparations et gestion des paiements clients." }, cars: { name: "Ventes de voitures", desc: "Gestion des ventes, suivi clients et historique des transactions." } },
+                education: { title: "Formation", subtitle: "Mon parcours académique", mbds: "Master 2 MBDS", master: "Master 1 en Informatique", license: "Licence en développement d'applications", present: "Présent" },
+                contact: { title: "Contact" },
+                footer: { rights: "Tous droits réservés. Fait avec" }
+            },
+            en: {
+                nav: { home: "Home", about: "About", skills: "Skills", experience: "Experience", projects: "Projects", education: "Education", contact: "Contact" },
+                hero: { greeting: "Hi, I'm", title: "Full Stack Developer", description: "Passionate about web development, I create high-performance and scalable applications. From concept to deployment, I develop complete web applications that meet business needs and user expectations.", contact_btn: "Contact me", cv_btn: "Download CV" },
+                about: { title: "About me", subtitle: "Discover my journey and ambitions", journey_title: "My Journey", journey_p1: "Currently pursuing a Master 2 MBDS at Université Côte d'Azur, I combine solid academic training with hands-on professional experience. My journey has allowed me to work on various projects, from internal application development to creating complex SaaS platforms.", journey_p2: "I am particularly interested in scalable architectures, performance optimization, and continuous improvement of user experience.", location: "Antananarivo", degree: "Master 2 MBDS (ongoing)", role: "Full Stack Developer", languages: "FR, EN, Malagasy", soft_skills: "Soft Skills", teamwork: "Teamwork", caring: "Caring", communication: "Communication", adaptability: "Adaptability", creativity: "Creativity", organization: "Organization" },
+                skills: { title: "Technical Skills", subtitle: "Technologies and tools I master", languages: "Languages", frameworks: "Frameworks", databases: "Databases", tools: "Tools & DevOps", methodologies: "Methodologies", functional: "Functional Skills", needs_analysis: "Needs analysis", modeling: "Modeling", testing: "Testing & QA", debugging: "Debugging", stats: { experience: "Year of experience", projects: "Projects completed", frameworks: "Frameworks mastered", databases: "Databases" } },
+                experience: { title: "Professional Experience", subtitle: "My career path", present: "Present", linkuma: { role: "Full-Stack Developer", company: "Tsarajoro - Linkuma Platform", desc: "Netlinking SaaS for SEO agencies. Automated campaign management, credit payments and analytics.", tasks: ["Client interface - Credit payment by transfer, transaction tracking", "Admin interface - Traceability (IP, logs), smart alerts", "PBN Management - WordPress integration, auto publishing", "SEO Analytics - Ranxplorer, keyword and traffic tracking", "AI & Auto - OpenAI (titles), TextBulker (writing)", "Integrations - PennyLane, Airtable, Haloscan"] }, crm: { role: "Full-Stack Developer", company: "Tsarajoro - Production CRM", desc: "Internal CRM to manage WordPress site production (Kubio). Multi-team workflow and validation.", tasks: ["Production workflow - Kubios → Todos → Preprod", "Multi-teams - GI (integrators) + GV (validators)", "Validation - SEO checklist, articles, pages", "Monitoring - HTTP status, hosting, domains", "Stats & Revenue - Reporting by project manager", "Role management - Spatie permissions"] }, supervision: { role: "Full-Stack Developer", company: "Tsarajoro - Supervision", desc: "Client domain monitoring, DNS detection, SSL tracking and real-time network security.", tasks: ["DNS monitoring and anomaly detection", "SSL tracking and expiration alerts", "Real-time network security", "Automatic email alerts"] }, rh: { role: "Freelance Full-Stack Developer", company: "WoodCraft - HR Management", desc: "Complete HR application with 5 roles (Admin, HR, Manager, Employee, Shareholder), leave, stock and payroll modules.", tasks: ["JWT Auth - 5 roles, personalized dashboards", "Employees - CRUD, contracts, salary history", "Leave - Manager→HR workflow, auto balance, day calculation", "Stock - Purchases/sales, Excel import, dashboards", "Audit - Complete traceability, system logs"] }, mazars: { role: "Laravel Developer Intern", company: "Forvis Mazars", desc: "Complete development of an internal mission management and billing application for an international audit firm.", tasks: ["Complete mission lifecycle management", "Billing process automation", "Automated budget calculation", "Collection tracking and management"] } },
+                projects: { title: "University Projects", subtitle: "Some academic achievements", furniture: { name: "Furniture Manufacturing", desc: "Order management, production tracking, material and labor cost calculation." }, library: { name: "Library", desc: "Loan management, returns, late penalties and book catalog." }, garage: { name: "Garage Management", desc: "Automotive diagnostics, repair tracking and customer payment management." }, cars: { name: "Car Sales", desc: "Sales management, customer tracking and transaction history." } },
+                education: { title: "Education", subtitle: "My academic background", mbds: "Master 2 MBDS", master: "Master 1 in Computer Science", license: "Bachelor in Application Development", present: "Present" },
+                contact: { title: "Contact" },
+                footer: { rights: "All rights reserved. Made with" }
+            }
+        };
+
+        let currentLang = localStorage.getItem('lang') || 'fr';
+
+        function getNestedValue(obj, path) {
+            return path.split('.').reduce((current, key) => current && current[key], obj);
+        }
+
+        function applyTranslations() {
+            const translations = allTranslations[currentLang];
+
+            // Apply simple translations
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                const value = getNestedValue(translations, key);
+                if (value) {
+                    el.textContent = value;
+                }
+            });
+
+            // Apply list translations (for experience tasks)
+            document.querySelectorAll('[data-i18n-list]').forEach(ul => {
+                const key = ul.getAttribute('data-i18n-list');
+                const items = getNestedValue(translations, key);
+                if (items && Array.isArray(items)) {
+                    const lis = ul.querySelectorAll('li');
+                    items.forEach((text, index) => {
+                        if (lis[index]) {
+                            lis[index].innerHTML = text;
+                        }
+                    });
+                }
+            });
+
+            // Update button text with flag emoji
+            document.getElementById('current-lang').textContent = currentLang === 'fr' ? '🇫🇷' : '🇬🇧';
+
+            // Update HTML lang attribute
+            document.documentElement.lang = currentLang;
+        }
+
+        function toggleLang() {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            localStorage.setItem('lang', currentLang);
+            applyTranslations();
+        }
+
+        // Load initial translations
+        applyTranslations();
 
         // Mobile menu toggle
         function toggleMenu() {

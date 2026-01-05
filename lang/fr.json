@@ -1,0 +1,155 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "education": "Formation",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "title": "Développeuse Full Stack",
+    "description": "Passionnée par le développement web, je crée des applications performantes et scalables. Du concept au déploiement, je développe des applications web complètes qui répondent aux besoins métiers et aux attentes utilisateurs.",
+    "contact_btn": "Me contacter",
+    "cv_btn": "Télécharger CV"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Découvrez mon parcours et mes ambitions",
+    "journey_title": "Mon Parcours",
+    "journey_p1": "Actuellement en Master 2 MBDS à l'Université Côte d'Azur, je combine formation académique solide et expérience professionnelle concrète. Mon parcours m'a permis de travailler sur des projets variés, du développement d'applications internes à la création de plateformes SaaS complexes.",
+    "journey_p2": "Je suis particulièrement intéressée par les architectures scalables, l'optimisation des performances et l'amélioration continue de l'expérience utilisateur.",
+    "location": "Antananarivo",
+    "degree": "Master 2 MBDS (en cours)",
+    "role": "Full Stack Developer",
+    "languages": "FR, EN, Malgache",
+    "soft_skills": "Soft Skills",
+    "teamwork": "Travail en équipe",
+    "caring": "Bienveillante",
+    "communication": "Communication",
+    "adaptability": "Adaptabilité",
+    "creativity": "Créativité",
+    "organization": "Organisation"
+  },
+  "skills": {
+    "title": "Compétences techniques",
+    "subtitle": "Technologies et outils que je maîtrise",
+    "languages": "Langages",
+    "frameworks": "Frameworks",
+    "databases": "Bases de données",
+    "tools": "Outils & DevOps",
+    "methodologies": "Méthodologies",
+    "functional": "Compétences fonctionnelles",
+    "needs_analysis": "Analyse des besoins",
+    "modeling": "Modélisation",
+    "testing": "Tests & QA",
+    "debugging": "Débogage",
+    "stats": {
+      "experience": "Année d'expérience",
+      "projects": "Projets réalisés",
+      "frameworks": "Frameworks maîtrisés",
+      "databases": "Bases de données"
+    }
+  },
+  "experience": {
+    "title": "Expérience professionnelle",
+    "subtitle": "Mon parcours professionnel",
+    "present": "Aujourd'hui",
+    "linkuma": {
+      "role": "Développeuse Full-Stack",
+      "company": "Tsarajoro - Plateforme Linkuma",
+      "desc": "SaaS de netlinking pour agences SEO. Gestion automatisée de campagnes, paiements par crédits et analytics.",
+      "tasks": [
+        "Interface client - Paiement crédits par virement, suivi transactions",
+        "Interface admin - Traçabilité (IP, logs), alertes intelligentes",
+        "Gestion PBN - Intégration WordPress, publication auto",
+        "Analytics SEO - Ranxplorer, suivi mots-clés et trafic",
+        "IA & Auto - OpenAI (titres), TextBulker (rédaction)",
+        "Intégrations - PennyLane, Airtable, Haloscan"
+      ]
+    },
+    "crm": {
+      "role": "Développeuse Full-Stack",
+      "company": "Tsarajoro - CRM Production",
+      "desc": "CRM interne pour gérer la production de sites WordPress (Kubio). Workflow multi-équipes et validation.",
+      "tasks": [
+        "Workflow production - Kubios → Todos → Preprod",
+        "Multi-équipes - GI (intégrateurs) + GV (validateurs)",
+        "Validation - Checklist SEO, articles, pages",
+        "Monitoring - Statuts HTTP, hébergements, domaines",
+        "Stats & CA - Reporting par chef de projet",
+        "Gestion rôles - Spatie permissions"
+      ]
+    },
+    "supervision": {
+      "role": "Développeuse Full-Stack",
+      "company": "Tsarajoro - Supervision",
+      "desc": "Monitoring des domaines clients, détection DNS, suivi SSL et sécurité réseau en temps réel.",
+      "tasks": [
+        "Monitoring DNS et détection d'anomalies",
+        "Suivi SSL et alertes expiration",
+        "Sécurité réseau en temps réel",
+        "Alertes automatiques par email"
+      ]
+    },
+    "rh": {
+      "role": "Développeuse Full-Stack Freelance",
+      "company": "WoodCraft - Gestion RH",
+      "desc": "Application RH complète avec 5 rôles (Admin, RH, Chef, Employé, Actionnaire), modules congés, stock et paie.",
+      "tasks": [
+        "Auth JWT - 5 rôles, dashboards personnalisés",
+        "Employés - CRUD, contrats, historique salaires",
+        "Congés - Workflow Chef→RH, solde auto, calcul jours",
+        "Stock - Achats/ventes, import Excel, dashboards",
+        "Audit - Traçabilité complète, logs système"
+      ]
+    },
+    "mazars": {
+      "role": "Stagiaire Développeuse Laravel",
+      "company": "Forvis Mazars",
+      "desc": "Développement complet d'une application interne de gestion des missions et de facturation pour un cabinet d'audit international.",
+      "tasks": [
+        "Gestion complète du cycle de vie des missions",
+        "Automatisation du processus de facturation",
+        "Calcul automatisé du budget prévisionnel",
+        "Suivi et gestion de l'encaissement"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Projets universitaires",
+    "subtitle": "Quelques réalisations académiques",
+    "furniture": {
+      "name": "Confection de meubles",
+      "desc": "Gestion des commandes, suivi de fabrication, calcul des coûts matières et main d'œuvre."
+    },
+    "library": {
+      "name": "Bibliothèque",
+      "desc": "Gestion des emprunts, retours, pénalités de retard et catalogue de livres."
+    },
+    "garage": {
+      "name": "Gestion de garage",
+      "desc": "Diagnostic automobile, suivi des réparations et gestion des paiements clients."
+    },
+    "cars": {
+      "name": "Ventes de voitures",
+      "desc": "Gestion des ventes, suivi clients et historique des transactions."
+    }
+  },
+  "education": {
+    "title": "Formation",
+    "subtitle": "Mon parcours académique",
+    "mbds": "Master 2 MBDS",
+    "master": "Master 1 en Informatique",
+    "license": "Licence en développement d'applications",
+    "present": "Présent"
+  },
+  "contact": {
+    "title": "Contact"
+  },
+  "footer": {
+    "rights": "Tous droits réservés. Fait avec"
+  }
+}
