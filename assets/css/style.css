@@ -865,6 +865,324 @@ section {
     z-index: 1;
 }
 
+/* ===== Project Gallery ===== */
+.project-gallery {
+    margin-bottom: 1.5rem;
+    border-radius: var(--radius-md);
+    overflow: visible;
+    position: relative;
+    z-index: 1;
+}
+
+/* Gallery Image Title - above the image */
+.gallery-title {
+    display: block;
+    color: var(--text-dark);
+    padding: 0 0 0.5rem 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: var(--font-body);
+}
+
+.gallery-title:empty {
+    display: none;
+}
+
+.gallery-main {
+    width: 100%;
+    height: 200px;
+    background: var(--cream-dark);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-soft);
+}
+
+.gallery-main .gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.gallery-main .gallery-img:hover {
+    transform: scale(1.02);
+}
+
+/* Zoom icon overlay on main image */
+.gallery-main::after {
+    content: '\f00e';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    color: var(--primary-accent);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    transition: var(--transition);
+    pointer-events: none;
+    box-shadow: var(--shadow-soft);
+}
+
+.gallery-main:hover::after {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.gallery-main .gallery-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-thumbs-wrapper {
+    position: relative;
+    margin-top: 0.5rem;
+    padding: 0 35px;
+}
+
+.gallery-thumbs {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 4px 0;
+}
+
+.gallery-thumbs::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-thumbs .thumb {
+    min-width: 50px;
+    width: 50px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    border: 1px solid var(--border-soft);
+    transition: var(--transition);
+    opacity: 0.7;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-soft);
+}
+
+.gallery-thumbs .thumb:hover,
+.gallery-thumbs .thumb.active {
+    border: 2px solid var(--primary-accent);
+    opacity: 1;
+}
+
+.gallery-thumbs .video-thumb {
+    min-width: 50px;
+    width: 50px;
+    height: 40px;
+    background: var(--gradient-elegant);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    opacity: 0.9;
+    flex-shrink: 0;
+}
+
+.gallery-thumbs .video-thumb:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.gallery-thumbs .video-thumb i {
+    color: white;
+    font-size: 0.9rem;
+}
+
+/* Gallery Navigation Arrows - positioned beside thumbnails */
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 28px;
+    background: var(--white);
+    border: 1px solid var(--border-soft);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 10;
+    box-shadow: var(--shadow-soft);
+}
+
+.gallery-nav:hover {
+    background: var(--primary-soft);
+    border-color: var(--primary-medium);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.gallery-nav i {
+    font-size: 0.75rem;
+    color: var(--text-dark);
+}
+
+.gallery-nav.prev {
+    left: 0;
+}
+
+.gallery-nav.next {
+    right: 0;
+}
+
+.gallery-nav.hidden {
+    display: none;
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+}
+
+.lightbox-content img,
+.lightbox-content video {
+    max-width: 100%;
+    max-height: 85vh;
+    border-radius: var(--radius-md);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 10001;
+}
+
+.lightbox-close:hover {
+    color: var(--primary-medium);
+    transform: scale(1.1);
+}
+
+/* Placeholder pour images manquantes */
+.gallery-main .gallery-img[src=""],
+.gallery-main .gallery-img:not([src]),
+.gallery-thumbs .thumb[src=""],
+.gallery-thumbs .thumb:not([src]) {
+    display: none;
+}
+
+.gallery-main:has(.gallery-img:not([src])):has(.gallery-img[src=""]),
+.gallery-main:empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-soft);
+}
+
+.gallery-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--text-soft);
+}
+
+.gallery-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.5;
+}
+
+.gallery-placeholder span {
+    font-size: 0.875rem;
+    opacity: 0.7;
+}
+
+/* Project Links (Demo & Code) */
+.project-links {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    padding-left: 0.75rem;
+    position: relative;
+    z-index: 1;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-full);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.project-link i {
+    font-size: 0.85rem;
+}
+
+.demo-link {
+    background: var(--gradient-elegant);
+    color: white;
+}
+
+.demo-link:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.code-link {
+    background: var(--cream-dark);
+    color: var(--text-dark);
+    border: 1px solid var(--border-soft);
+}
+
+.code-link:hover {
+    background: var(--primary-soft);
+    border-color: var(--primary-medium);
+    transform: translateY(-2px);
+}
+
 /* Carte d'expérience large (détaillée) */
 .exp-card-large {
     grid-column: 1 / -1;
