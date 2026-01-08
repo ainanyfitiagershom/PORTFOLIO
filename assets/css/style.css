@@ -639,12 +639,12 @@ section {
     gap: 2rem;
     padding-bottom: 1rem;
     width: max-content;
-    animation: skillsScroll 25s linear infinite;
+    animation: skillsScroll 40s linear infinite;
+    animation-play-state: running;
 }
 
-.skills-grid:hover,
 .skills-grid.paused {
-    animation-play-state: paused;
+    animation-play-state: paused !important;
 }
 
 @keyframes skillsScroll {
@@ -2137,6 +2137,35 @@ footer .fa-heart {
 @media (max-width: 768px) {
     .navbar .container {
         position: relative;
+    }
+
+    .exp-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Skills: animation + scrollbar visible sur mobile */
+    .skills-wrapper {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 10px;
+    }
+
+    .skills-wrapper::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .skills-wrapper::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+    }
+
+    .skills-wrapper::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+    }
+
+    .skills-grid {
+        padding: 0 1rem 1rem 1rem;
     }
 
     .nav-links {

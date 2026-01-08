@@ -776,11 +776,33 @@
             counterObserver.observe(statsSection);
         }
 
-        // ===== Skills Grid Click to Pause =====
+        // ===== Skills Grid Click/Tap to Toggle Pause =====
         const skillsGrid = document.querySelector('.skills-grid');
         if (skillsGrid) {
-            skillsGrid.addEventListener('click', function() {
-                this.classList.toggle('paused');
+            let touchMoved = false;
+
+            // Detect if user is scrolling (not tapping)
+            skillsGrid.addEventListener('touchstart', function() {
+                touchMoved = false;
+            }, { passive: true });
+
+            skillsGrid.addEventListener('touchmove', function() {
+                touchMoved = true;
+            }, { passive: true });
+
+            // Toggle pause on tap (not scroll)
+            skillsGrid.addEventListener('touchend', function(e) {
+                if (!touchMoved) {
+                    this.classList.toggle('paused');
+                }
+            }, { passive: true });
+
+            // Desktop: click to toggle pause
+            skillsGrid.addEventListener('click', function(e) {
+                // Avoid double trigger on touch devices
+                if (e.pointerType !== 'touch') {
+                    this.classList.toggle('paused');
+                }
             });
         }
 
@@ -910,7 +932,6 @@
                     <button class="gallery-arrow gallery-arrow-left" onclick="navigateGallery('${projectId}', -1)" ${showArrows}><i class="fas fa-chevron-left"></i></button>
                     <div class="gallery-main" data-project="${projectId}" data-index="0">
                         <img src="${firstImage}" alt="${projectId}" class="gallery-img" onclick="openLightbox('${projectId}')">
-                        <video src="${basePath}/demo.mp4" class="gallery-video" controls style="display:none;"></video>
                     </div>
                     <button class="gallery-arrow gallery-arrow-right" onclick="navigateGallery('${projectId}', 1)" ${showArrows}><i class="fas fa-chevron-right"></i></button>
                 </div>
