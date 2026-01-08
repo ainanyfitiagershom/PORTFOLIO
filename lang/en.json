@@ -88,6 +88,7 @@
       "company": "Tsarajoro - Supervision",
       "desc": "Client domain monitoring, DNS detection, SSL tracking and real-time network security.",
       "tasks": [
+        "PostgreSQL Configuration in a Dockerized Environment",
         "DNS monitoring and anomaly detection",
         "SSL tracking and expiration alerts",
         "Real-time network security",
