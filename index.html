@@ -779,30 +779,16 @@
         // ===== Skills Grid Click/Tap to Toggle Pause =====
         const skillsGrid = document.querySelector('.skills-grid');
         if (skillsGrid) {
-            let touchMoved = false;
+            let isTouchDevice = false;
 
-            // Detect if user is scrolling (not tapping)
+            // Detect touch device
             skillsGrid.addEventListener('touchstart', function() {
-                touchMoved = false;
-            }, { passive: true });
+                isTouchDevice = true;
+            }, { passive: true, once: true });
 
-            skillsGrid.addEventListener('touchmove', function() {
-                touchMoved = true;
-            }, { passive: true });
-
-            // Toggle pause on tap (not scroll)
-            skillsGrid.addEventListener('touchend', function(e) {
-                if (!touchMoved) {
-                    this.classList.toggle('paused');
-                }
-            }, { passive: true });
-
-            // Desktop: click to toggle pause
+            // Use click for both - works on mobile and desktop
             skillsGrid.addEventListener('click', function(e) {
-                // Avoid double trigger on touch devices
-                if (e.pointerType !== 'touch') {
-                    this.classList.toggle('paused');
-                }
+                this.classList.toggle('paused');
             });
         }
 
@@ -876,41 +862,28 @@
             }
         }
 
-        async function findAvailableImages(basePath, projectId) {
+        // Configuration des images par projet (évite les erreurs 404)
+        const projectImages = {
+            linkuma: 7,
+            crm: 5,
+            bibliotheque: 14,
+            supervision: 1,
+            rh: 1,
+            mazars: 1,
+            meubles: 1,
+            garage: 1,
+            voitures: 1
+        };
+
+        function findAvailableImages(basePath, projectId) {
+            const count = projectImages[projectId] || 0;
             const images = [];
 
-            for (let i = 1; i <= MAX_IMAGES; i++) {
-                const result = await findImage(basePath, i);
-                if (result) {
-                    images.push(result);
-                } else {
-                    break; // Arrêter dès qu'une image n'existe pas
-                }
+            for (let i = 1; i <= count; i++) {
+                images.push({ num: i, filename: `${i}.png` });
             }
 
             return images;
-        }
-
-        async function findImage(basePath, num) {
-            const extensions = ['png', 'jpg', 'jpeg', 'webp'];
-
-            for (const ext of extensions) {
-                const url = `${basePath}/${num}.${ext}`;
-                if (await imageExists(url)) {
-                    return { num, filename: `${num}.${ext}` };
-                }
-            }
-
-            return null;
-        }
-
-        function imageExists(url) {
-            return new Promise((resolve) => {
-                const img = new Image();
-                img.onload = () => resolve(true);
-                img.onerror = () => resolve(false);
-                img.src = url;
-            });
         }
 
         function generateGalleryHTML(projectId, basePath, images) {
@@ -1080,11 +1053,14 @@
         }
 
         // Close lightbox on click outside or Escape key
-        document.getElementById('lightbox').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeLightbox();
-            }
-        });
+        const lightboxElement = document.getElementById('lightbox');
+        if (lightboxElement) {
+            lightboxElement.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeLightbox();
+                }
+            });
+        }
 
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape') {
@@ -1095,6 +1071,33 @@
                 navigateLightbox(1);
             }
         });
+
+        // Swipe navigation pour mobile sur le lightbox
+        (function() {
+            const lightbox = document.getElementById('lightbox');
+            if (!lightbox) return;
+
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            lightbox.addEventListener('touchstart', function(e) {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            lightbox.addEventListener('touchend', function(e) {
+                touchEndX = e.changedTouches[0].screenX;
+                const diff = touchStartX - touchEndX;
+
+                // Swipe minimum de 50px
+                if (Math.abs(diff) > 50) {
+                    if (diff > 0) {
+                        navigateLightbox(1); // Swipe gauche = image suivante
+                    } else {
+                        navigateLightbox(-1); // Swipe droite = image précédente
+                    }
+                }
+            }, { passive: true });
+        })();
     </script>
 
     <!-- Lightbox Modal -->
