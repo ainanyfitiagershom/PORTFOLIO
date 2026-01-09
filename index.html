@@ -1073,7 +1073,7 @@
         });
 
         // Swipe navigation pour mobile sur le lightbox
-        (function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const lightbox = document.getElementById('lightbox');
             if (!lightbox) return;
 
@@ -1097,7 +1097,7 @@
                     }
                 }
             }, { passive: true });
-        })();
+        });
     </script>
 
     <!-- Lightbox Modal -->
