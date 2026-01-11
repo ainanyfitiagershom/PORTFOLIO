@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitia Gershom - Développeuse Full Stack</title>
+    <!-- Fonts: titles (Playfair/Cormorant) + body (Montserrat) -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Navigation: logo + anchors + language toggle + mobile burger -->
     <nav class="navbar">
         <div class="container">
             <a href="#accueil" class="navbar-brand">
@@ -35,7 +38,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section: introduction + primary CTAs + profile image -->
     <section class="hero" id="accueil">
         <div class="container">
             <div class="hero-content">
@@ -64,7 +67,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- About Section: journey + soft skills + quick facts -->
     <section class="about" id="apropos">
         <div class="container">
             <div class="section-header">
@@ -111,7 +114,7 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- Skills Section: carousel + stats -->
     <section class="skills" id="competences">
         <div class="container">
             <div class="section-header">
@@ -289,7 +292,7 @@
                 </div>
             </div>
 
-            <!-- Stats -->
+            <!-- Stats: quick highlights -->
             <div class="stats">
                 <div class="stat-card">
                     <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
@@ -315,7 +318,7 @@
         </div>
     </section>
 
-    <!-- Experience Section -->
+    <!-- Experience Section: professional cards + media gallery -->
     <section class="experience" id="experience">
         <div class="container">
             <div class="section-header">
@@ -396,7 +399,7 @@
                 <div class="exp-card">
                     <div class="project-gallery" data-project="rh"></div>
                     <h3 data-i18n="experience.rh.role">Développeuse Full-Stack Freelance</h3>
-                    <p class="exp-company" data-i18n="experience.rh.company">WoodCraft - Gestion RH</p>
+                    <p class="exp-company" data-i18n="experience.rh.company">Hazolahy - Gestion RH</p>
                     <span class="exp-date"><i class="far fa-calendar-alt"></i> <span data-i18n="experience.rh.date">Octobre 2025</span></span>
                     <p class="exp-desc" data-i18n="experience.rh.desc"><strong>Application RH complète</strong> avec 5 rôles (Admin, RH, Chef, Employé, Actionnaire), modules congés, stock et paie.</p>
                     <ul class="exp-list" data-i18n-list="experience.rh.tasks">
@@ -412,8 +415,7 @@
                         <span class="tech-tag">PostgreSQL</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link demo-link" target="_blank"><i class="fab fa-youtube"></i> <span data-i18n="links.demo">Voir démo</span></a>
-                        <a href="#" class="project-link code-link" target="_blank"><i class="fab fa-github"></i> <span data-i18n="links.source">Code source</span></a>
+                        <a href="https://youtu.be/xkURjeYUbTY" class="project-link demo-link" target="_blank"><i class="fab fa-youtube"></i> <span data-i18n="links.demo">Voir démo</span></a>
                     </div>
                 </div>
 
@@ -435,8 +437,7 @@
                         <span class="tech-tag">Oracle</span>
                     </div>
                     <div class="project-links">
-                        <a href="#" class="project-link demo-link" target="_blank"><i class="fab fa-youtube"></i> <span data-i18n="links.demo">Voir démo</span></a>
-                        <a href="#" class="project-link code-link" target="_blank"><i class="fab fa-github"></i> <span data-i18n="links.source">Code source</span></a>
+                        <a href="https://youtu.be/32u9LIzYWa8" class="project-link demo-link" target="_blank"><i class="fab fa-youtube"></i> <span data-i18n="links.demo">Voir démo</span></a>
                     </div>
                 </div>
             </div>
@@ -453,20 +454,6 @@
             </div>
             <div class="uni-projects-grid">
                 <div class="uni-project-card">
-                    <div class="project-gallery" data-project="meubles"></div>
-                    <h3 data-i18n="projects.furniture.name">Confection de meubles</h3>
-                    <p data-i18n="projects.furniture.desc">Gestion des commandes, suivi de fabrication, calcul des coûts matières et main d'œuvre.</p>
-                    <div class="tech-tags">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">JSP</span>
-                        <span class="tech-tag">PostgreSQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link demo-link" target="_blank"><i class="fab fa-youtube"></i> <span data-i18n="links.demo">Voir démo</span></a>
-                        <a href="#" class="project-link code-link" target="_blank"><i class="fab fa-github"></i> <span data-i18n="links.source">Code source</span></a>
-                    </div>
-                </div>
-                <div class="uni-project-card">
                     <div class="project-gallery" data-project="bibliotheque"></div>
                     <h3 data-i18n="projects.library.name">Bibliothèque</h3>
                     <p data-i18n="projects.library.desc">Gestion des emprunts, retours, pénalités de retard et catalogue de livres.</p>
@@ -481,6 +468,16 @@
                     </div>
                 </div>
                 <div class="uni-project-card">
+                    <div class="project-gallery" data-project="meubles"></div>
+                    <h3 data-i18n="projects.furniture.name">Confection de meubles</h3>
+                    <p data-i18n="projects.furniture.desc">Gestion des commandes, suivi de fabrication, calcul des coûts matières et main d'œuvre.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">JSP</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                </div>
+                <div class="uni-project-card">
                     <div class="project-gallery" data-project="garage"></div>
                     <h3 data-i18n="projects.garage.name">Gestion de garage</h3>
                     <p data-i18n="projects.garage.desc">Diagnostic automobile, suivi des réparations et gestion des paiements clients.</p>
@@ -488,10 +485,6 @@
                         <span class="tech-tag">Angular</span>
                         <span class="tech-tag">Express.js</span>
                         <span class="tech-tag">MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link demo-link" target="_blank"><i class="fab fa-youtube"></i> <span data-i18n="links.demo">Voir démo</span></a>
-                        <a href="#" class="project-link code-link" target="_blank"><i class="fab fa-github"></i> <span data-i18n="links.source">Code source</span></a>
                     </div>
                 </div>
                 <div class="uni-project-card">
@@ -502,10 +495,6 @@
                         <span class="tech-tag">Spring Boot</span>
                         <span class="tech-tag">React</span>
                         <span class="tech-tag">PostgreSQL</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link demo-link" target="_blank"><i class="fab fa-youtube"></i> <span data-i18n="links.demo">Voir démo</span></a>
-                        <a href="#" class="project-link code-link" target="_blank"><i class="fab fa-github"></i> <span data-i18n="links.source">Code source</span></a>
                     </div>
                 </div>
             </div>
@@ -584,7 +573,7 @@
                 hero: { greeting: "Bonjour, je suis", title: "Développeuse Full Stack", description: "Passionnée par le développement web, je crée des applications performantes et scalables. Du concept au déploiement, je développe des applications web complètes qui répondent aux besoins métiers et aux attentes utilisateurs.", contact_btn: "Me contacter", cv_btn: "Télécharger CV" },
                 about: { title: "À propos de moi", subtitle: "Découvrez mon parcours et mes ambitions", journey_title: "Mon Parcours", journey_p1: "Actuellement en Master 2 MBDS à l'Université Côte d'Azur, je combine formation académique solide et expérience professionnelle concrète. Mon parcours m'a permis de travailler sur des projets variés, du développement d'applications internes à la création de plateformes SaaS complexes.", journey_p2: "Je suis particulièrement intéressée par les architectures scalables, l'optimisation des performances et l'amélioration continue de l'expérience utilisateur.", location: "Antananarivo", degree: "Master 2 MBDS (en cours)", role: "Full Stack Developer", languages: "FR, EN, Malgache", soft_skills: "Soft Skills", teamwork: "Travail en équipe", caring: "Bienveillante", communication: "Communication", adaptability: "Adaptabilité", creativity: "Créativité", organization: "Organisation" },
                 skills: { title: "Compétences techniques", subtitle: "Technologies et outils que je maîtrise", languages: "Langages", frameworks: "Frameworks", databases: "Bases de données", tools: "Outils & DevOps", methodologies: "Méthodologies", functional: "Compétences fonctionnelles", needs_analysis: "Analyse des besoins", modeling: "Modélisation", testing: "Tests & QA", debugging: "Débogage", stats: { experience: "Année d'expérience", projects: "Projets réalisés", frameworks: "Frameworks maîtrisés", databases: "Bases de données" } },
-                experience: { title: "Expérience professionnelle", subtitle: "Mon parcours professionnel", present: "Aujourd'hui", linkuma: { role: "Développeuse Full-Stack", company: "Tsarajoro - Plateforme Linkuma", desc: "SaaS de netlinking pour agences SEO. Gestion automatisée de campagnes, paiements par crédits et analytics.", tasks: ["Interface client - Paiement crédits par virement, suivi transactions, alertes intelligentes", "Interface admin - Traçabilité (IP, logs)", "Gestion PBN - Intégration WordPress, publication auto", "Analytics SEO - Ranxplorer, suivi mots-clés et trafic", "IA & Auto - OpenAI (titres), TextBulker (rédaction)", "Intégrations - PennyLane, Airtable, Haloscan"] }, crm: { role: "Développeuse Full-Stack", company: "Tsarajoro - CRM Production", desc: "CRM interne pour gérer la production de sites WordPress (Kubio). Workflow multi-équipes et validation.", tasks: ["Workflow production - Kubios → Todos → Preprod", "Multi-équipes - GI (intégrateurs) + GV (validateurs)", "Validation - Checklist SEO, articles, pages", "Monitoring - Statuts HTTP, hébergements, domaines", "Stats & CA - Reporting par chef de projet", "Gestion rôles - Spatie permissions"] }, supervision: { role: "Développeuse Full-Stack", company: "Tsarajoro - Supervision", desc: "Monitoring des domaines clients, détection DNS, suivi SSL et sécurité réseau en temps réel.", tasks: ["Configuration de PostgreSQL dans un environnement Dockerisé", "Monitoring DNS et détection d'anomalies", "Suivi SSL et alertes expiration", "Sécurité réseau en temps réel", "Alertes automatiques par email"] }, rh: { role: "Développeuse Full-Stack Freelance", company: "WoodCraft - Gestion RH", date: "Octobre 2025", desc: "Application RH complète avec 5 rôles (Admin, RH, Chef, Employé, Actionnaire), modules congés, stock et paie.", tasks: ["Auth JWT - 5 rôles, dashboards personnalisés", "Employés - CRUD, contrats, historique salaires", "Congés - Workflow Chef→RH, solde auto, calcul jours", "Stock - Achats/ventes, import Excel, dashboards", "Audit - Traçabilité complète, logs système"] }, mazars: { role: "Stagiaire Développeuse Laravel", company: "Forvis Mazars", date: "Août - Novembre 2024", desc: "Développement complet d'une application interne de gestion des missions et de facturation pour un cabinet d'audit international.", tasks: ["Gestion complète du cycle de vie des missions", "Automatisation du processus de facturation", "Calcul automatisé du budget prévisionnel", "Suivi et gestion de l'encaissement"] } },
+                experience: { title: "Expérience professionnelle", subtitle: "Mon parcours professionnel", present: "Aujourd'hui", linkuma: { role: "Développeuse Full-Stack", company: "Tsarajoro - Plateforme Linkuma", desc: "SaaS de netlinking pour agences SEO. Gestion automatisée de campagnes, paiements par crédits et analytics.", tasks: ["Interface client - Paiement crédits par virement, suivi transactions, alertes intelligentes", "Interface admin - Traçabilité (IP, logs)", "Gestion PBN - Intégration WordPress, publication auto", "Analytics SEO - Ranxplorer, suivi mots-clés et trafic", "IA & Auto - OpenAI (titres), TextBulker (rédaction)", "Intégrations - PennyLane, Airtable, Haloscan"] }, crm: { role: "Développeuse Full-Stack", company: "Tsarajoro - CRM Production", desc: "CRM interne pour gérer la production de sites WordPress (Kubio). Workflow multi-équipes et validation.", tasks: ["Workflow production - Kubios → Todos → Preprod", "Multi-équipes - GI (intégrateurs) + GV (validateurs)", "Validation - Checklist SEO, articles, pages", "Monitoring - Statuts HTTP, hébergements, domaines", "Stats & CA - Reporting par chef de projet", "Gestion rôles - Spatie permissions"] }, supervision: { role: "Développeuse Full-Stack", company: "Tsarajoro - Supervision", desc: "Monitoring des domaines clients, détection DNS, suivi SSL et sécurité réseau en temps réel.", tasks: ["Configuration de PostgreSQL dans un environnement Dockerisé", "Monitoring DNS et détection d'anomalies", "Suivi SSL et alertes expiration", "Sécurité réseau en temps réel", "Alertes automatiques par email"] }, rh: { role: "Développeuse Full-Stack Freelance", company: "Hazolahy - Gestion RH", date: "Octobre 2025", desc: "Application RH complète avec 5 rôles (Admin, RH, Chef, Employé, Actionnaire), modules congés, stock et paie.", tasks: ["Auth JWT - 5 rôles, dashboards personnalisés", "Employés - CRUD, contrats, historique salaires", "Congés - Workflow Chef→RH, solde auto, calcul jours", "Stock - Achats/ventes, import Excel, dashboards", "Audit - Traçabilité complète, logs système"] }, mazars: { role: "Stagiaire Développeuse Laravel", company: "Forvis Mazars", date: "Août - Novembre 2024", desc: "Développement complet d'une application interne de gestion des missions et de facturation pour un cabinet d'audit international.", tasks: ["Gestion complète du cycle de vie des missions", "Automatisation du processus de facturation", "Calcul automatisé du budget prévisionnel", "Suivi et gestion de l'encaissement"] } },
                 projects: { title: "Projets universitaires", subtitle: "Quelques réalisations académiques", furniture: { name: "Confection de meubles", desc: "Gestion des commandes, suivi de fabrication, calcul des coûts matières et main d'œuvre." }, library: { name: "Bibliothèque", desc: "Gestion des emprunts, retours, pénalités de retard et catalogue de livres." }, garage: { name: "Gestion de garage", desc: "Diagnostic automobile, suivi des réparations et gestion des paiements clients." }, cars: { name: "Ventes de voitures", desc: "Gestion des ventes, suivi clients et historique des transactions." } },
                 education: { title: "Formation", subtitle: "Mon parcours académique", mbds: "Master 2 MBDS", master: "Master 1 en Informatique", license: "Licence en développement d'applications", present: "Présent" },
                 contact: { title: "Contact" },
@@ -596,7 +585,7 @@
                 hero: { greeting: "Hi, I'm", title: "Full Stack Developer", description: "Passionate about web development, I create high-performance and scalable applications. From concept to deployment, I develop complete web applications that meet business needs and user expectations.", contact_btn: "Contact me", cv_btn: "Download CV" },
                 about: { title: "About me", subtitle: "Discover my journey and ambitions", journey_title: "My Journey", journey_p1: "Currently pursuing a Master 2 MBDS at Université Côte d'Azur, I combine solid academic training with hands-on professional experience. My journey has allowed me to work on various projects, from internal application development to creating complex SaaS platforms.", journey_p2: "I am particularly interested in scalable architectures, performance optimization, and continuous improvement of user experience.", location: "Antananarivo", degree: "Master 2 MBDS (ongoing)", role: "Full Stack Developer", languages: "FR, EN, Malagasy", soft_skills: "Soft Skills", teamwork: "Teamwork", caring: "Caring", communication: "Communication", adaptability: "Adaptability", creativity: "Creativity", organization: "Organization" },
                 skills: { title: "Technical Skills", subtitle: "Technologies and tools I master", languages: "Languages", frameworks: "Frameworks", databases: "Databases", tools: "Tools & DevOps", methodologies: "Methodologies", functional: "Functional Skills", needs_analysis: "Needs analysis", modeling: "Modeling", testing: "Testing & QA", debugging: "Debugging", stats: { experience: "Year of experience", projects: "Projects completed", frameworks: "Frameworks mastered", databases: "Databases" } },
-                experience: { title: "Professional Experience", subtitle: "My career path", present: "Present", linkuma: { role: "Full-Stack Developer", company: "Tsarajoro - Linkuma Platform", desc: "Netlinking SaaS for SEO agencies. Automated campaign management, credit payments and analytics.", tasks: ["Client interface - Credit payment by transfer, transaction tracking, smart alerts", "Admin interface - Traceability (IP, logs)", "PBN Management - WordPress integration, auto publishing", "SEO Analytics - Ranxplorer, keyword and traffic tracking", "AI & Auto - OpenAI (titles), TextBulker (writing)", "Integrations - PennyLane, Airtable, Haloscan"] }, crm: { role: "Full-Stack Developer", company: "Tsarajoro - Production CRM", desc: "Internal CRM to manage WordPress site production (Kubio). Multi-team workflow and validation.", tasks: ["Production workflow - Kubios → Todos → Preprod", "Multi-teams - GI (integrators) + GV (validators)", "Validation - SEO checklist, articles, pages", "Monitoring - HTTP status, hosting, domains", "Stats & Revenue - Reporting by project manager", "Role management - Spatie permissions"] }, supervision: { role: "Full-Stack Developer", company: "Tsarajoro - Supervision", desc: "Client domain monitoring, DNS detection, SSL tracking and real-time network security.", tasks: [ "PostgreSQL Configuration in a Dockerized Environment", "DNS monitoring and anomaly detection", "SSL tracking and expiration alerts", "Real-time network security", "Automatic email alerts"] }, rh: { role: "Freelance Full-Stack Developer", company: "WoodCraft - HR Management", date: "October 2025", desc: "Complete HR application with 5 roles (Admin, HR, Manager, Employee, Shareholder), leave, stock and payroll modules.", tasks: ["JWT Auth - 5 roles, personalized dashboards", "Employees - CRUD, contracts, salary history", "Leave - Manager→HR workflow, auto balance, day calculation", "Stock - Purchases/sales, Excel import, dashboards", "Audit - Complete traceability, system logs"] }, mazars: { role: "Laravel Developer Intern", company: "Forvis Mazars", date: "August - November 2024", desc: "Complete development of an internal mission management and billing application for an international audit firm.", tasks: ["Complete mission lifecycle management", "Billing process automation", "Automated budget calculation", "Collection tracking and management"] } },
+                experience: { title: "Professional Experience", subtitle: "My career path", present: "Present", linkuma: { role: "Full-Stack Developer", company: "Tsarajoro - Linkuma Platform", desc: "Netlinking SaaS for SEO agencies. Automated campaign management, credit payments and analytics.", tasks: ["Client interface - Credit payment by transfer, transaction tracking, smart alerts", "Admin interface - Traceability (IP, logs)", "PBN Management - WordPress integration, auto publishing", "SEO Analytics - Ranxplorer, keyword and traffic tracking", "AI & Auto - OpenAI (titles), TextBulker (writing)", "Integrations - PennyLane, Airtable, Haloscan"] }, crm: { role: "Full-Stack Developer", company: "Tsarajoro - Production CRM", desc: "Internal CRM to manage WordPress site production (Kubio). Multi-team workflow and validation.", tasks: ["Production workflow - Kubios → Todos → Preprod", "Multi-teams - GI (integrators) + GV (validators)", "Validation - SEO checklist, articles, pages", "Monitoring - HTTP status, hosting, domains", "Stats & Revenue - Reporting by project manager", "Role management - Spatie permissions"] }, supervision: { role: "Full-Stack Developer", company: "Tsarajoro - Supervision", desc: "Client domain monitoring, DNS detection, SSL tracking and real-time network security.", tasks: [ "PostgreSQL Configuration in a Dockerized Environment", "DNS monitoring and anomaly detection", "SSL tracking and expiration alerts", "Real-time network security", "Automatic email alerts"] }, rh: { role: "Freelance Full-Stack Developer", company: "Hazolahy - HR Management", date: "October 2025", desc: "Complete HR application with 5 roles (Admin, HR, Manager, Employee, Shareholder), leave, stock and payroll modules.", tasks: ["JWT Auth - 5 roles, personalized dashboards", "Employees - CRUD, contracts, salary history", "Leave - Manager→HR workflow, auto balance, day calculation", "Stock - Purchases/sales, Excel import, dashboards", "Audit - Complete traceability, system logs"] }, mazars: { role: "Laravel Developer Intern", company: "Forvis Mazars", date: "August - November 2024", desc: "Complete development of an internal mission management and billing application for an international audit firm.", tasks: ["Complete mission lifecycle management", "Billing process automation", "Automated budget calculation", "Collection tracking and management"] } },
                 projects: { title: "University Projects", subtitle: "Some academic achievements", furniture: { name: "Furniture Manufacturing", desc: "Order management, production tracking, material and labor cost calculation." }, library: { name: "Library", desc: "Loan management, returns, late penalties and book catalog." }, garage: { name: "Garage Management", desc: "Automotive diagnostics, repair tracking and customer payment management." }, cars: { name: "Car Sales", desc: "Sales management, customer tracking and transaction history." } },
                 education: { title: "Education", subtitle: "My academic background", mbds: "Master 2 MBDS", master: "Master 1 in Computer Science", license: "Bachelor in Application Development", present: "Present" },
                 contact: { title: "Contact" },
@@ -815,9 +804,30 @@
                 5: { fr: "Récupération du domain rating des sites via API Ahrefs", en: "Domain Rating Retrieval via Ahrefs API" }
             },
             supervision: { 1: { fr: "Surveillance sites", en: "Site Monitoring" } },
-            rh: { 1: { fr: "Dashboard RH", en: "HR Dashboard" } },
-            mazars: { 1: { fr: "Gestion missions", en: "Mission Management" } },
-            meubles: { 1: { fr: "Interface commandes", en: "Orders Interface" } },
+            rh: { 
+                1: { fr: "Dashboard", en: "Dashboard" },
+                2: { fr: "Tableau de Bord Admin", en: "Admin Dashboard" },
+                3: { fr: "Gestion des congés", en: "Leave Management" },
+                4: { fr: "Créer une demande de congé", en: "Create Leave Request" },
+                5: { fr: "Créer une demande de congé (partie Employé)", en: "Create a Leave Request (Employee Side)" },
+                6: { fr: "Gestion de la paie", en: "Payroll Management" },
+                7: { fr: "Gestion des avances", en: "Advance Management" },
+                8: { fr: "Stock : Gestion des produits", en: "Stock: Product Management" },
+                9: { fr: "Import Excel du stock", en: "Excel Stock Import" },
+                10: { fr: "Tableau de bord stock", en: "Stock Dashboard" },
+                11: { fr: "Détails de l’employé", en: "Employee Details" }
+            },
+            mazars: { 
+                1: { fr: "Tableau de bord", en: "Dashboard" },
+                2: { fr: "Création de contrat", en: "Contract Creation" },
+                3: { fr: "Choix de l’équipe pour la mission", en: "Team Selection for the Mission" },
+                4: { fr: "Création de budget", en: "Budget Creation" },
+                5: { fr: "Création de facture", en: "Invoice Creation" },
+                6: { fr: "Pourcentage des tranches de facture", en: "Invoice Installment Percentage" },
+                7: { fr: "Factures à émettre", en: "Invoices to Be Issued" },
+                8: { fr: "Facture", en: "Invoice" }
+             },
+            meubles: { 1: { fr: "...", en: "..." } },
             bibliotheque: {
                 1: { fr: "Accueil du site", en: "Site Homepage" },
                 2: { fr: "Catalogue de livres", en: "Book Catalog" },
@@ -834,8 +844,8 @@
                 13: { fr: "Gestion des réservations", en: "Reservation Management" },
                 14: { fr: "Import / Export de données", en: "Data Import / Export" }
             },
-            garage: { 1: { fr: "Diagnostic auto", en: "Auto Diagnostics" } },
-            voitures: { 1: { fr: "Liste véhicules", en: "Vehicle List" } },
+            garage: { 1: { fr: "...", en: "..." } },
+            voitures: { 1: { fr: "...", en: "..." } },
         };
 
         // Helper function to get translated title
@@ -868,8 +878,8 @@
             crm: 5,
             bibliotheque: 14,
             supervision: 1,
-            rh: 1,
-            mazars: 1,
+            rh: 11,
+            mazars: 8,
             meubles: 1,
             garage: 1,
             voitures: 1

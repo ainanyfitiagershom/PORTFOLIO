@@ -97,7 +97,7 @@
     },
     "rh": {
       "role": "Freelance Full-Stack Developer",
-      "company": "WoodCraft - HR Management",
+      "company": "Hazolahy - HR Management",
       "desc": "Complete HR application with 5 roles (Admin, HR, Manager, Employee, Shareholder), leave, stock and payroll modules.",
       "tasks": [
         "JWT Auth - 5 roles, personalized dashboards",

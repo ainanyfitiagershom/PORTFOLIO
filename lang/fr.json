@@ -97,7 +97,7 @@
     },
     "rh": {
       "role": "Développeuse Full-Stack Freelance",
-      "company": "WoodCraft - Gestion RH",
+      "company": "Hazolahy - Gestion RH",
       "desc": "Application RH complète avec 5 rôles (Admin, RH, Chef, Employé, Actionnaire), modules congés, stock et paie.",
       "tasks": [
         "Auth JWT - 5 rôles, dashboards personnalisés",
