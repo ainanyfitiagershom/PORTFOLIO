@@ -128,7 +128,7 @@
     },
     "library": {
       "name": "Bibliothèque",
-      "desc": "Gestion des emprunts, retours, pénalités de retard et catalogue de livres."
+      "desc": "Application composée d’un frontoffice lecteur, d’un backoffice administrateur et d’une API pour la gestion du catalogue, des emprunts et des réservations."
     },
     "garage": {
       "name": "Gestion de garage",

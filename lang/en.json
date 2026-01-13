@@ -128,7 +128,7 @@
     },
     "library": {
       "name": "Library",
-      "desc": "Loan management, returns, late penalties and book catalog."
+      "desc": "Application composed of a reader front office, an administrator back office, and an API for managing the catalog, borrowings, and reservations."
     },
     "garage": {
       "name": "Garage Management",
